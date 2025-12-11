@@ -1,0 +1,187 @@
+/* ======================
+   General Page Layout
+   ====================== */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f6fa;
+    margin: 0;
+    padding: 20px;
+    color: #2c3e50;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+/* ======================
+   Links and Buttons
+   ====================== */
+a, button {
+    background: #2980b9;
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+a:hover, button:hover {
+    background: #1f6391;
+}
+
+/* ======================
+   Form Styling
+   ====================== */
+form {
+    background: white;
+    padding: 25px;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* ======================
+   Table Styling
+   ====================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+table th {
+    background: #34495e;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+table tr:hover {
+    background: #f1f1f1;
+}
+
+/* ======================
+   Cards for Dashboard
+   ====================== */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1 1 200px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card h3, .card h4 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.card p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2980b9;
+}
+
+/* ======================
+   Dashboard Charts
+   ====================== */
+canvas {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-top: 20px;
+}
+
+/* ======================
+   Flash messages
+   ====================== */
+.flash {
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.flash-success {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.flash-danger {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.flash-warning {
+    background-color: #f1c40f;
+    color: white;
+}
+
+/* ======================
+   Print styling
+   ====================== */
+@media print {
+    a, button {
+        display: none;
+    }
+    body {
+        padding: 0;
+        font-size: 12pt;
+    }
+    table {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+}
+
+/* ======================
+   Misc
+   ====================== */
+.back-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #555;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
