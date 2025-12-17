@@ -195,7 +195,7 @@ def delete_expense(id):
     return redirect(url_for("index"))
 
 # ============================================================
-# ➕ ADDED ROUTE: EXPENSE LIST PAGE
+# ADDED ROUTE: EXPENSE LIST PAGE
 # ============================================================
 
 @app.route("/expenses")
