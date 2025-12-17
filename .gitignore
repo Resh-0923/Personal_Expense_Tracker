@@ -1,19 +1,20 @@
-# Python cache
-__pycache__/
-*.pyc
-
 # Virtual environment
 env/
 venv/
+__pycache__/
 
-# SQLite database
-instance/expenses.db
+# Python cache
+*.pyc
 
-# IDE files
-*.vscode/
-*.idea/
-*.swp
+# Database
+instance/
+*.db
 
-# System files
-.DS_Store
-Thumbs.db
+# Environment / secrets
+env.py
+
+# Flask
+.flaskenv
+
+# VS Code
+.vscode/
